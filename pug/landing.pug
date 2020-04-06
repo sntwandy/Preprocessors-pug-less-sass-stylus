@@ -1,5 +1,11 @@
 -var titles = ["Main Title", "Subtitle 1", "Subtitle 2", "Subtitle 3"];
 -var user = "Megan";
+mixin box(img, title, content)
+	.caja
+		.caja__imagen: img(src="images/"+img)
+		.caja__contenido
+			h3= title
+			p= content
 doctype html
 html
 	head
@@ -24,6 +30,7 @@ html
 					| Sunt voluptatum excepturi eius.
 					span Preponi incidunt aliquid voluptates sapiente quis, Sunt voluptatum excepturi eius.
 				a.boton Read More
-		ul
-			each title in titles
-				li #{title}
+		main.contenido
+			+box('imagen.png', titles[1], 'Lorem, ipsum dolor sit amet')
+			+box('imagen.png', titles[2], 'Lorem, ipsum dolor sit amet')
+			+box('imagen.png', titles[3], 'Lorem, ipsum dolor sit amet')
