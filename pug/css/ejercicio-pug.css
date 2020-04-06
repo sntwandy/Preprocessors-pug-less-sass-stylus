@@ -93,7 +93,7 @@ header a {
 .contenido {
 	display: flex;
 	align-items: center;
-  justify-content: center;
+	justify-content: center;
 }
 .caja {
 	max-width: 400px;
@@ -114,6 +114,40 @@ header a {
 .caja__contenido {
 	background-color: #EEF1F7;
 	padding: 20px;
+}
+
+.menu {
+	width: 400px;
+	height: 80vh;
+	text-align: center;
+	background-color: #CED7E9;
+}
+
+.menu h1 {
+	text-align: start;
+	padding: 2em 0px 0px 2em
+}
+
+.menu ul {
+	padding: 0px;
+}
+
+.menu ul li {
+	list-style: none;
+	margin: 10px auto;
+	padding: 10px 4em;
+	color: #012179;
+	font-weight: 700;
+	font-size: large;
+	text-align: start;
+}
+
+.content {
+	text-align: start;
+	padding-top: 0px;
+	padding-bottom: 450px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 footer ul {

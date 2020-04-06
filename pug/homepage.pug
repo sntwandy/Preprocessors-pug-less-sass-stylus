@@ -1,0 +1,21 @@
+extend components/template.pug
+block content
+	.contenido
+		.menu
+			h1 Menu
+			ul
+				each link in links
+					li= link
+		div.content
+			h2 Main Title
+			p
+				| Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				| Soluta ullam officiis fugit dolorum rerum nostrum? Autem
+				| dolores, voluptate eveniet, blanditiis odit, asperiores et
+				| possimus esse tempora sapiente facilis. Modi, voluptatum!
+			p
+				| Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				| Soluta ullam officiis fugit dolorum rerum nostrum? Autem
+				| dolores, voluptate eveniet, blanditiis odit, asperiores et
+				| possimus esse tempora sapiente facilis. Modi, voluptatum!
+			a.boton Read More
