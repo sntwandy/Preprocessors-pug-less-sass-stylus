@@ -116,6 +116,10 @@ header a {
 	padding: 20px;
 }
 
+.container {
+	display: flex;
+}
+
 .menu {
 	width: 400px;
 	height: 80vh;
@@ -144,7 +148,7 @@ header a {
 
 .content {
 	text-align: start;
-	padding-top: 0px;
+	padding-top: 50px;
 	padding-bottom: 450px;
 	padding-left: 100px;
 	padding-right: 100px;
