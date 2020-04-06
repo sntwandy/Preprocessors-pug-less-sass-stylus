@@ -1,0 +1,19 @@
+-var titles = ["Main Title", "Subtitle 1", "Subtitle 2", "Subtitle 3"];
+-var user = "Megan";
+mixin box(img, title, content)
+    .caja
+        .caja__imagen: img(src="images/"+img)
+        .caja__contenido
+            h3= title
+            p= content
+doctype html
+html
+    include head.pug
+    body
+        header
+            h1 Platzi Games
+            if user
+                a Hi, #{user}
+            else
+                a.boton Register
+        block content
