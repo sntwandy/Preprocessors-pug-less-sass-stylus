@@ -1,2 +1,2 @@
-/node_modules
-*.json
+/pug/node_modules
+/pug/.json
