@@ -1,13 +1,17 @@
 .footer--principal {
-    display: flex;
-    height: 160px;
+    display: block;
+    height: auto;
     margin-top: 30px;
     padding: 0px 20px 20px 20px;
     background-color: $color-primario;
+    @include media(desktop-s) {
+        display: flex;
+        height: 160px;
+    }
 }
 
 .nav--footer ul {
-    display: flex;
+    display: block;
     padding-top: 35px;
     li {
         list-style: none;
@@ -16,6 +20,9 @@
             color: $color-claro;
             @include titulos($Fuente2)
         }
+    }
+    @include media(desktop-s) {
+        display: flex;
     }
 }
 

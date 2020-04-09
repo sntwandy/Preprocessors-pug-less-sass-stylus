@@ -1,0 +1,32 @@
+.sidebar--listado {
+    max-width: 300px;
+    padding: 20px;
+    @include caja();
+    h3 {
+        @include font-size(20px);
+        @include titulos($Fuente2);
+    }
+    ul {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    li {
+        padding: 10px 0px;
+        margin: 10px 0px;
+        border-top: 1px solid #cccccc;
+        list-style: none;
+    }
+    a {
+        display: flex;
+        padding: 10px 20px;
+        color: $color-primario;
+        text-transform: none;
+        font-weight: normal;
+        font-family: $Fuente1;
+    }
+    &__numero {
+        margin-right: 20px;
+        color: get-opacity($color-primario, 0.5);
+    }
+}
